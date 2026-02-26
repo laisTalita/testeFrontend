@@ -1,0 +1,40 @@
+header{
+    width: 100%;
+   /* position: fixed;*/
+    height: 168px;
+}
+.container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.476);
+}
+nav{
+    padding: 1em;
+}
+.transpa{
+    background-color: none;
+}
+.backWhite{
+    background-color: var(--white);
+}
+header nav ul li{
+    list-style-type: none;
+}
+@media (min-width:768px) {
+    .menu{
+        display: none;
+    }
+}
+
+.link {
+  text-decoration: none;
+  padding-bottom: 4px;
+  color: var(--gray);
+  transition: color 0.3s, border-color 0.3s;
+  border-bottom: 2px solid transparent;
+}
+.active {
+  border-bottom: 2px solid currentColor;
+  color: var(--active-color);
+}

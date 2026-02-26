@@ -1,0 +1,184 @@
+{
+  "pagina1": [
+    {
+    "id":1,
+      "span": "Para escolas",
+      "titulo":"Revolucione a sua escola",
+      "texto": "Tenha o sistema MundoMaker de aprendizagem na grade curricular da sua escola – o MakerLab, alinhado totalmente à BNCC. Conheça também as atividades Extracurriculares, o Inventura e a Consultoria para o Espaço Maker.",
+      "botao":"Ser uma escola parceira"
+    },
+    {
+        "id":2,
+      "span": "Para famílias",
+      "titulo":"Sua família merece!",
+      "texto": "O MundoMaker oferece atividades mão na massa e de programação através de nossas oficinas mensais, semestrais e anuais. Conheça nossos programas e aprenda brincando!",
+      "botao": "Oba! Quero saber mais"
+    },
+    {
+        "id":3,
+      "span": "Para empresas",
+      "titulo":"a sua empresa precisa",
+      "texto": "Leve a Cultura Maker para dentro da sua empresa! Conheça as atividades “mão na massa” do MundoMaker desenvolvidas especialmente para o setor corporativo.",
+      "botao": "Descubra nossas soluções"
+    }
+  ],
+  "sectionGreen":[
+    {
+     "id":1,
+     "number": 30000,
+     "text":"ALUNOS IMPACTADOS"
+    },
+    {
+        "id":2,
+        "number":1000,
+        "text":"Educadores formados"
+    },
+    {
+        "id":3,
+        "number":100,
+        "text":"ESCOLAS ATENDIDAS"
+    },
+    {
+        "id":4,
+        "number":"9 anos",
+        "text":"INOVANDO EM PRÁTICAS PEDAGÓGICAS"
+    }
+  ],
+  "artigos":[
+    {
+        "id":1,
+        "data":"19/01/2024",
+        "text":" Sed mauris suspendisse aliquet ac facilisi ut. Iaculis tellus."
+    },
+     {
+        "id":2,
+        "data":"19/01/2024",
+        "text":" Sed mauris suspendisse aliquet ac facilisi ut. Iaculis tellus."
+    },
+     {
+        "id":3,
+        "data":"19/01/2024",
+        "text":" Sed mauris suspendisse aliquet ac facilisi ut. Iaculis tellus."
+    }
+  ],
+  "depoimentos":[
+    {
+        "id":1,
+        "nome":"John Doe",
+        "img":"1",
+        "text":"Faucibus volutpat est mauris vitae felis integer feugiat. Non eget odio dui enim euismod gravida. Lectus cursus vivamus tortor lectus blandit. Id laoreet tortor ultricies consectetur egestas sagittis suspendisse auctor."
+    },
+    {
+        "id":2,
+        "nome":"John Doe",
+        "img":"2",
+        "text":"Dis sed tellus tellus mauris blandit. Ornare velit tellus potenti vitae tellus. Eget congue non nunc vitae. Eget nunc vestibulum feugiat ut. Ultrices sed magna pulvinar id bibendum. Suspendisse ac ultrices convallis vel."
+    },
+    {
+        "id":3,
+        "nome":"John Doe",
+        "img":"3",
+        "text":"Dui nulla consequat aliquet consectetur viverra consectetur ac rhoncus vel. Vitae id nec magna sit pulvinar. Hendrerit vulputate id duis elit vitae pellentesque volutpat id quam. Platea ipsum amet eu diam."
+    },
+    {
+        "id":4,
+        "nome":"John Doe",
+        "img":"4",
+        "text":"Sapien non odio sagittis non. Eu aliquam purus parturient aenean faucibus sagittis. Luctus et adipiscing maecenas lacus porttitor at. Et amet mauris sem augue facilisis adipiscing etiam arcu neque."
+    },
+    {
+        "id":5,
+        "nome":"John Doe",
+        "img":"1",
+        "text":"Faucibus volutpat est mauris vitae felis integer feugiat. Non eget odio dui enim euismod gravida. Lectus cursus vivamus tortor lectus blandit. Id laoreet tortor ultricies consectetur egestas sagittis suspendisse auctor."
+    },
+    {
+        "id":6,
+        "nome":"John Doe",
+        "img":"2",
+        "text":"Faucibus volutpat est mauris vitae felis integer feugiat. Non eget odio dui enim euismod gravida. Lectus cursus vivamus tortor lectus blandit. Id laoreet tortor ultricies consectetur egestas sagittis suspendisse auctor."
+    },
+     {
+        "id":7,
+        "nome":"John Doe",
+        "img":"4",
+        "text":"Faucibus volutpat est mauris vitae felis integer feugiat. Non eget odio dui enim euismod gravida. Lectus cursus vivamus tortor lectus blandit. Id laoreet tortor ultricies consectetur egestas sagittis suspendisse auctor."
+    },
+    {
+        "id":8,
+        "nome":"John Doe",
+        "img":"3",
+        "text":"Faucibus volutpat est mauris vitae felis integer feugiat. Non eget odio dui enim euismod gravida. Lectus cursus vivamus tortor lectus blandit. Id laoreet tortor ultricies consectetur egestas sagittis suspendisse auctor."
+    }
+  ],
+  "footerListas":[
+        {
+            "id":1,
+            "titule":"escolas",
+            "lista": ["Instituições parceiras","Vídeo explicativo","Competências","Atividades"]
+        },
+         {
+            "id":2,
+            "titule":"famílias",
+            "lista": ["Curso Maker","MakerFun","MakerFesta","Oficinas de aniversário"]
+        },
+          {
+            "id":3,
+            "titule":"empresas",
+            "lista": ["Opção","Opção","Opção","Opção","Opção","Opção"]
+        }
+        ,
+          {
+            "id":4,
+            "titule":"social",
+            "lista": ["Opção","Opção","Opção","Opção","Opção","Opção"]
+        }
+  ],
+  "footer_sep":[
+         {
+            "id":1,
+            "titule":"Blog",
+            "lista": ["Artigo mais recente","Todos os artigos"]
+        },
+        {
+            "id":2,
+            "titule":"Contato",
+            "lista": ["atendimento@mundomaker.cc","+55 11 93807-2345"]
+
+        }
+  ],
+  "familias":[
+    {
+        "id":2,
+        "texto":"Os encontros garantem projetos inter e multi disciplinares que envolvem construção prática, engenharia, arte, design, eletrônica, programação, prototipação rápida e muito mais. O nosso Curso Maker oferece um ciclo completo, para participantes com idades a partir de 5 anos, de aulas dinâmicas, inteligentes e interessantes que engajam o aluno do começo ao fim. No início, é definido em conjunto com o aluno o projeto que será feito através das propostas de projetos MundoMaker e a partir daí é criado um planejamento de construção. Design Thinking, manuseio de ferramentas manuais, prototipação rápida, programação, arte, design, eletrônica e habilidades socioemocionais são algumas das competências exploradas ao longo do programa, durante a construção dos projetos. Desafiados constantemente a pensar além, os aprendizes expandem os limites de sua criatividade para encontrar e criar soluções significativas para possíveis problemas do mundo real. Matricule já seu filho nesta jornada maker!",
+        "img":2,
+        "button":"Fale Conosco"
+
+    },
+    {
+        "id":1,
+        "texto":"As oficinas do MundoMaker proporcionam a experiência da Educação Integral por meio da Cultura Maker. A Educação Integral promove o desenvolvimento da relação do indivíduo com ele mesmo, a relação do indivíduo com à sociedade e a relação do indivíduo com o mundo, ampliando a consciência e facilitando o processo de trazer ideias para a realidade. O momento ideal para crianças, jovens e adultos conhecerem e se encantarem com o MundoMaker! O participante explora algumas das habilidades maker em um projeto único e significativo, junto com mediadores especializados e com os materiais e ferramentas disponíveis. Você terá todos os recursos disponíveis para fazer o projeto proposto. As oficinas estão estruturadas em torno de projetos mão na massa, baseando-se nos seguintes valores: Acolhimento, Respeito, Inovação, Excelência e Segurança (ARIES).´",
+        "img":"1",
+        "button":"Fale Conosco"
+
+
+    }
+  ],
+  "empresas":[
+     {
+        "id": 1,
+        "titulo":"Desenvolvimento de Equipe",
+        "text":"A experiência criativa e prática é efetiva, pois faz o indivíduo pensar e criar caminhos para a concretização dos seus objetivos, tudo isso em um processo natural, rompendo com qualquer pensamento limitante."
+    },
+    {
+        "id": 2,
+        "titulo":"Palestras para empresas",
+        "text":"Em suas palestras para as empresas, Fabio Zsigmond fala sobre a importância da Educação Integral estar presente no ambiente corporativo e sobre como impulsionar resultados através da aprendizagem."
+    },
+    {
+        "id": 3,
+        "titulo":"Ativação de Marca",
+        "text":"Procuramos sair de ações tradicionais e trazer novas possibilidades para a marca através de atividades hands on construídas a 4 mãos: empresa + MundoMaker."
+    }
+  ]
+}
