@@ -216,17 +216,27 @@
 .footerBlog ul{
     width: 60%;
 }
-
+.copyR{
+    background-color: var(--black);
+    padding: 2em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9em;
+    border-radius: 0px 0px 50px 50px;
+    color: var(--white);
+}
+.copyR p{
+    display: inline-block;
+    font-size: 0.7em;
+    opacity: 0.6;
+    
+}
 @media (min-width:768px) {
-    .containerFloat{
-    top: -12em;
-}
-.secFooter > section{
-    padding-top: 13em;
-}
+
 }
 @media(min-width:992px){
-    
     .last{
         width: 98%;
         display: flex;
@@ -246,6 +256,17 @@
 .footerBlog ul{
     width: 100%;
 }
+.copyR{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+}
+.copyR p{
+    font-size: 0.7em;
+    opacity: 0.6;
+    
+}
 }
 
 @media (min-width:1200px){
@@ -254,8 +275,8 @@
     text-align: start;
 }
 .containerFloat form {
-    width: 45%;
     margin: 0%;
+    flex: 1;
     padding-bottom: 0em;
     margin-top: 0;
     flex-direction: row;
@@ -264,7 +285,7 @@
 .containerFloat{
     display: flex;
     flex-direction: row;
-    padding: 1em 0em;
+    padding: 1em 1.4em;
     align-items: center;
     top: -5em;
 
@@ -272,14 +293,26 @@
 .containerFloat >diV{
     width: 30%;
 }
+.containerFloat div h3{
+    font-size: 1.6em;
+}
 .containerFloat form button{
     margin: 0%;
+    max-width: 170px;
     margin-top: 2.2em;
 }
 .secFooter > section{
     padding-top: 5em;
 }
-
+.secFooter{
+    padding: 0em;
+}
+.containerFloat form div{
+    width: 50%;
+}
+.containerFloat form div div{
+    width: 90%;
+}
 
 .firstDiv{
     flex-direction: row;
@@ -309,6 +342,7 @@
     width: 48%;
     gap: 0.3em;
 }
+
 
 }
 
@@ -318,7 +352,7 @@
     text-align: start;
 }
 .containerFloat form {
-    width: 45%;
+    flex: 1;
     margin: 0%;
     padding-bottom: 0em;
     margin-top: 0;
@@ -328,20 +362,19 @@
 .containerFloat{
     display: flex;
     flex-direction: row;
-    padding: 1em 0em;
     align-items: center;
     top: -5em;
-
+    width: 80%;
+    padding: 1.5em;
 }
 .containerFloat >diV{
     width: 30%;
+    padding: 0%;
 }
 .containerFloat form button{
     margin: 0%;
     margin-top: 2.2em;
-}
-.secFooter > section{
-    padding-top: 5em;
+    padding: 1em 1.2em;
 }
 .firstDiv{
     flex-direction: row;
@@ -357,10 +390,6 @@
 .firstDiv > p{
     max-width: 300px;
 }
-.firstDiv nav{
-    max-width: 300px;
-    margin-top:3em;
-}
 .secDiv{
     margin: 0em;
     margin-top: 1em;
@@ -371,4 +400,25 @@
     gap: 0.3em;
 }
 
+.containerFloat div h3{
+    font-size: 1.7em;
+}
+}
+@media(min-width:1440px){
+    .containerFloat{
+    width: 70%;
+}
+
+.firstDiv > p{
+    max-width: 500px;
+}
+.firstDiv nav{
+    max-width: 400px;
+}
+.firstDiv nav ul{
+    gap: 0.5em;
+}
+.last{
+    width: 90%;
+}
 }

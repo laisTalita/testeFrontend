@@ -99,7 +99,7 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className={styles.copyR}>
                     <p>Copyright © 2025 MundoMaker. Todos os direitos reservados.</p>
                     <p>
                         Desenvolvido por Bayerl Studio
