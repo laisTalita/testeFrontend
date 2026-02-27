@@ -1,0 +1,70 @@
+.artigos{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7em;
+}
+.conatinerText {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9em; 
+}
+.conatinerText p{
+    margin-bottom: 0.1em;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    color: #00000095;
+}
+.confiraA{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.9em;
+}
+.confiraA div img{
+    width: 100%;
+}
+.confiraA > div{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    max-width: 280px;
+    padding: 0.5em;
+    border-radius: 15px;
+     background-color: var(--white);
+        box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.016);
+
+}
+.confiraA div div{
+    padding: 0.5em;
+}
+.confiraA div p{
+    margin: 0.8em 0em;
+    font-size: 0.7em;
+    color: #00000095;
+}
+.confiraA div h4{
+    font-size: 0.9em;
+}
+
+@media(min-width: 768px){
+   .artigos{
+    width: 82%;
+   }
+   .confiraA{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+   }
+    .confiraA >div:first-child{
+        max-width: 40%;
+    }
+   
+    .confiraA >div:not(:first-child){
+        max-width: 25%;
+    }
+}

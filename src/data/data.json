@@ -114,35 +114,35 @@
   "footerListas":[
         {
             "id":1,
-            "titule":"escolas",
+            "titulo":"escolas",
             "lista": ["Instituições parceiras","Vídeo explicativo","Competências","Atividades"]
         },
          {
             "id":2,
-            "titule":"famílias",
+            "titulo":"famílias",
             "lista": ["Curso Maker","MakerFun","MakerFesta","Oficinas de aniversário"]
         },
           {
             "id":3,
-            "titule":"empresas",
+            "titulo":"empresas",
             "lista": ["Opção","Opção","Opção","Opção","Opção","Opção"]
         }
         ,
           {
             "id":4,
-            "titule":"social",
+            "titulo":"social",
             "lista": ["Opção","Opção","Opção","Opção","Opção","Opção"]
         }
   ],
   "footer_sep":[
          {
             "id":1,
-            "titule":"Blog",
+            "titulo":"Blog",
             "lista": ["Artigo mais recente","Todos os artigos"]
         },
         {
             "id":2,
-            "titule":"Contato",
+            "titulo":"Contato",
             "lista": ["atendimento@mundomaker.cc","+55 11 93807-2345"]
 
         }

@@ -1,0 +1,113 @@
+.depoimentos{
+    margin: 5em 0em;
+    padding: 4em 0em;
+    position: relative;
+}
+.depoimentos *{
+    position: relative;
+    z-index: 1;
+}
+.depoimentos::after{
+    content: '';
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    bottom: 7em;
+    right: -2em;
+    background-image: url('../assets/images/Frame-1.svg');
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.depoimentos::before{
+   content: '';
+   position: absolute;
+   width: 60px;
+   height: 60px;
+   top: 0em;
+   left: 0em;
+   background-image: url('../assets/images/Frame.svg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.containerP{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+.containerP p{
+    font-size: 0.7em;
+    text-transform: uppercase;
+    color: #00000095;
+    margin-bottom: 0.9em;
+}
+
+.containerCards{
+    background-color: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    gap: 2.4em;
+    background-image: url('../assets/images/LinesText.svg');
+    padding: 3em 1.6em;
+    padding-bottom: 1em;
+    margin-top: 3em;
+}
+
+.containerCards img{
+    width: 30px;
+}
+.depoiments{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.depoiments img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    object-fit: cover;   
+    object-position: center;
+    
+}
+.containerCards >div{
+    width: 230px;
+}
+.depoiments h3{
+    margin-top: 0.6em;
+}
+.containerCards div p{
+    margin-top: 1.3em;
+    line-height: 1.5em;
+}
+
+@media(min-width:768px){
+    .depoimentos::before{
+   width: 90px;
+   height: 90px;
+    top: 3em;
+}
+.containerP h3{
+    font-size: 1.6em;
+}
+}
+
+@media (min-width:1024px) {
+    .depoimentos::after{
+    width: 220px;
+    height: 220px;
+    bottom: 4em;
+    right: -4em;
+    z-index: 0;
+}
+}
+@media(min-width:1400px){
+    .depoimentos::before{
+   width: 220px;
+   height: 220px;
+  
+}
+.containerP h3{
+    font-size: 1.9em;
+}
+}

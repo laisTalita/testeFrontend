@@ -1,0 +1,109 @@
+.sectionGreen{
+    margin:5em 0em;
+    padding: 3em 0em;
+    background-color: #39DF18;
+    position: relative;
+    overflow:hidden;
+}
+.sectionGreenDiv{
+     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3em;
+}
+
+.containerGreen{
+    width: 40%;
+    text-align: center;
+}
+.containerGreen h3{
+     color: var(--white);
+     font-size: 1.3em;
+     margin-bottom: 0.3em;
+}
+.containerGreen h3 span{
+    color: var(--black);
+}
+.containerGreen p{
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.sectionGreen::before{
+    content: '';
+    position: absolute;
+    width: 90px;
+    background-color: rgba(255, 255, 255, 0)(255, 255, 255);
+    border-radius: 50%;
+    border-style: dashed;
+    top: -1em;
+    left: -1.2em;
+    z-index: 3;
+    height: 60px;
+    rotate: 310deg;
+}
+.sectionGreen::after{
+    content: '';
+    position: absolute;
+    width: 90px;
+    background-color: rgba(255, 255, 255, 0)(255, 255, 255);
+    border-radius: 50%;
+    border-style: dashed;
+    bottom: -1em;
+    right: -1.2em;
+    z-index: 3;
+        rotate: 310deg;
+
+    height: 60px;
+}
+
+@media (min-width:992px) {
+    .containerGreen{
+    width: 22%;
+}
+.sectionGreenDiv{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: flex-start;
+}
+}
+@media (min-width: 1200px) {
+    .sectionGreenDiv{
+    width: 80%;
+}
+.containerGreen h3{
+     font-size: 2.4em;
+     margin-bottom: 0.4em;
+}
+.containerGreen p{
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+
+
+.sectionGreen::before{
+    width: 300px;
+    height: 150px;
+    top: -4em;
+    left: -6em;
+    rotate: 320deg;
+}
+.sectionGreen::after{
+    width: 300px;
+    height: 150px;
+    bottom: -4em;
+    right: -6em;
+        rotate: 320deg;
+
+}
+}
+@media (min-width: 1400px) {
+    .containerGreen h3{
+     font-size: 2.6em;
+     margin-bottom: 0.4em;
+}
+}

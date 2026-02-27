@@ -1,19 +1,22 @@
 import { IoIosArrowRoundBack,IoIosArrowRoundForward  } from "react-icons/io";
 import slideBar from '../../assets/images/Slidebar.svg'
 import sliderBarBlue from '../../assets/images/SlidebarBlue.svg'
+import style from  '../../styles/ContBasic.module.css'
 
-export default function ContainerBasic({text,titulo,children,blue = false}){
+export default function ContainerBasic({text,titulo,children,blue = false,className}){
     return(
-        <section>
-            <div>
+        <section >
+            <div className={`${className}`}>
                 <p>{text}</p>
                 <h3>{titulo}</h3>
             </div>
-            {children}
-              <section>
+            <div className={style.scroll}>
+                {children}
+            </div>
+              <section className={style.footerBasic}>
                 <div>
-                    <IoIosArrowRoundBack/>
-                    <IoIosArrowRoundForward/>
+                    <IoIosArrowRoundBack className={style.arrow}/>
+                    <IoIosArrowRoundForward className={style.arrow}/>
                 </div>
                 {
                     blue ? (

@@ -1,40 +1,172 @@
-header{
+.header {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: auto;  
+}
+.header nav{
+    padding: 1.5em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3em;
+}
+.header nav > div{
+    display: flex;
     width: 100%;
-   /* position: fixed;*/
-    height: 168px;
+    justify-content: space-between;
 }
-.container{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.476);
+.transpa {
+  background-color: transparent;
+      transition: background-color 0.2s;
+
 }
-nav{
-    padding: 1em;
+.backWhite {
+  background-color: rgba(255, 255, 255, 0.846);
+  backdrop-filter: blur(5px);}
+
+.backBlack{
+    background-color: rgba(0, 0, 0, 0.425);
+    backdrop-filter: blur(5px);
 }
-.transpa{
-    background-color: none;
+.menuOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.545);
+  z-index: 998; 
 }
-.backWhite{
-    background-color: var(--white);
+.logo{
+    width: 50%;
+    max-width: 150px;
 }
-header nav ul li{
+.menuButton{
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.menuColorWhite{
+    color: var(--white);
+}
+.menuColorBlack{
+    color: var(--black);
+}
+.menuSection{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.8em;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 1.7em;
+    align-items: center;
+    justify-content: center;
+}
+.links li{
     list-style-type: none;
 }
-@media (min-width:768px) {
-    .menu{
-        display: none;
-    }
-}
-
 .link {
   text-decoration: none;
   padding-bottom: 4px;
-  color: var(--gray);
   transition: color 0.3s, border-color 0.3s;
   border-bottom: 2px solid transparent;
+}
+.linkW{
+    color: rgba(255, 255, 255, 0.529);
+}
+.linkB{
+    color: rgba(14, 14, 14, 0.643);
 }
 .active {
   border-bottom: 2px solid currentColor;
   color: var(--active-color);
+  font-weight: 700;
+}
+.searchForm {
+  padding: 0.8em 1.1em;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 350px;
+}
+.searchInput {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.2em;
+ font-size: 0.8em;
+}
+.input::placeholder{
+    letter-spacing: 0.2em;
+}
+.inputW {
+  color: var(--white);
+    border: 1px solid rgba(243, 238, 238, 0.365);
+}
+.inputW .input::placeholder{
+    color: var(--white);
+}
+.inputB {
+  color: var(--black);
+  border: 1px solid rgba(7, 7, 7, 0.326);
+}
+.searchInput input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  font-size: 1em;
+}
+.formDesck{
+    display: none;
+}
+
+@media (min-width: 768px) {
+  .menuButton { 
+    display: none;
+  }
+  .header nav > div{
+    width: auto;
+}
+  .logo{
+    width: 180px;
+}
+  .header nav{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.formDesck{
+    display: flex;
+}
+.formMobile{
+    display: none;
+}
+.menuSection{
+    padding:  0em;
+}
+.menuSection ,.links{
+    flex-direction: row;
+}
+}
+
+@media (min-width:1024px) {
+    .header nav{
+    padding: 2em ;
+    width: 90%;
+    margin: auto;
+    }
+    .menuSection{
+       gap: 4em;
+    }
+    .logo{
+       max-width: 295px;
+    }
 }

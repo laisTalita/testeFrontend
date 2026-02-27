@@ -1,0 +1,430 @@
+.home{
+    height: 50vh;
+    background-image: url('../assets/images/kids.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    position: relative;
+    box-shadow: inset 180px 100px 200px rgba(0, 0, 0, 0.604);
+    flex-direction: column;
+    align-items:flex-start;
+    padding: 2em 0em;
+    justify-content: flex-end;
+}
+.home::before {
+  content: "";
+  position: absolute;
+
+  inset: 0;
+  background: rgba(0, 0, 0, 0.324);
+  z-index: 1;
+}
+.homeContainer{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    color: var(--white);
+    text-shadow:  1px 3px 6px rgba(0, 0, 0, 0.16);
+}
+.homeContainer >div{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    gap: 1.1em;
+    width: 90%;
+}
+.homeContainerCursos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.3em;
+    max-width: 650px;
+}
+.homeContainerCursos button{
+    width: auto;
+    gap: 0.6em;
+    padding: 1.1em;
+}
+.containerLines{
+    flex: 1;
+    height: 1px;
+    background-image: url('../assets/images/Line.svg');
+}
+.containerArrows{
+    font-size: 15px;
+}
+.homeContainer p{
+    max-width: 600px;
+}
+.containerArrows{
+    display: flex;
+    gap: 0.7em;
+}
+.containerArrows .arrow{
+    border: 1px solid rgba(255, 255, 255, 0.246);
+    padding: 0.3em;
+    font-size: 1.6em;
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+}
+.containerP{
+    padding-top: 6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6em;
+}
+.containerParcerias{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    height: auto;
+    gap: 1em;
+    max-width: 350px;
+    width: 90%;
+    overflow: hidden !important;
+
+}
+.containerParcerias img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+.containerParcerias div{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 1.3em;
+    padding-bottom: 3em;
+    gap: 0.4em;
+    position: relative;
+}
+.containerParcerias div::before {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 80px;
+  border-radius: 50%;
+  bottom: -1em;
+  left: -1em;
+  z-index: 1;
+}
+.containerParcerias div::after {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.08);
+  bottom: -2em;
+  left: 2em;
+  z-index: 0;
+}
+.cor1 div::before, .cor1 div::after {
+  background-color: #39df1841;
+}
+.cor3 div::before, .cor3 div::after{
+  background-color: #00c7f431;
+}
+.cor2 div::before {
+  left: auto;
+  right: -1em;
+  bottom: -1em;
+  background-color: #ffa20042;
+}
+.cor2 div::after {
+  left: auto;
+  right: 2em;
+  bottom: -2em;
+  background-color: #ffa20042;
+}
+.containerParcerias div h2{
+    font-size: 1.2em;
+    text-transform: lowercase;
+}
+.itemSpan{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+.textP{
+    color: var(--black);
+    opacity: 0.7;
+    font-size: 0.9em;
+    margin-top: 0.4em
+}
+.containerParcerias div .textP::first-letter{
+    text-transform: uppercase;
+}
+.cor1{
+    background-color: #e2f6dee1;
+}
+
+.cor1 .itemSpan{
+    color: #188502;
+}
+.cor1 .highlight{
+     border-bottom: 2px solid #188502;
+}
+.cor2{
+    background-color: #f9efddfb;
+}
+.cor2 .itemSpan{
+    color:#9C6400;
+}
+.cor3{
+    background-color: #d9eff4fc;
+}
+.cor3 .itemSpan{
+    color: #007994;
+}
+.containerParcerias button{
+    width: 80%;
+    padding: 1em 1.5em;
+    margin: auto;    
+    margin-top: 2em;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.161);
+}
+.abs{
+    position: relative;
+}
+.abs::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    top:-0em;
+    transform: translate(-0em);
+    background-image: url("../assets/images/Lines.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    opacity: 0.3; 
+    z-index: 0;
+    pointer-events: none;
+}
+.abs > * {
+    position: relative;
+    z-index: 1;
+}
+
+.streatL{
+    margin-top: 8em;
+    padding: 6em 0em;
+    background-color: #F3F3F3;
+    padding-bottom: 2em;
+}
+.streatLW{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.3em;
+}
+.streatLContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.streatLContainer img{
+    width: 30%;
+    max-width: 137px;
+    max-height: 300px;
+    margin-top: -9em;
+}
+.streatLContainer div p{
+    color: rgba(0, 0, 0, 0.583);
+    text-transform: uppercase;
+    font-size: 0.7em;
+}
+.streatLContainer div span{
+    color: var(--green);
+}
+.streatLContainerDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2em;
+}
+.streatLContainerDiv p{
+    width: 90%;
+    font-size: 0.9em;
+    color: #00000095;
+    max-width: 700px;
+}
+.streatLContainerDiv button{
+    padding: 1em ;
+    gap: 1em;
+}
+@media (min-width: 768px) {
+    .home{
+    height: 60vh;
+    }
+    .homeContainer > div{
+        gap:0.3em
+    }
+    .homeContainer h1{
+        font-size: 4em;
+    }
+    .homeContainerCursos{
+        margin-top: 0.9em;
+    }
+    .homeContainerCursos{
+    gap: 1.3em;
+    }
+    .containerParcerias{
+        width: 90%;
+        gap: 0em;
+        max-width: none;
+        flex-direction: row-reverse;
+    }
+    .containerParcerias div{
+    padding: 2em 1.5em;
+    }
+    .cor2{
+        flex-direction: row !important;
+    }
+
+    .containerP >div > img{
+        border-radius: 0px 20px 20px 0px;
+    }
+    .cor2 img{
+        border-radius: 20px 0px 0px 20px !important;
+
+    }
+    .containerLines{
+        height: 2px;
+    }
+    .streatL{
+    margin-top: 12em;
+}
+  
+}
+@media (min-width: 1024px) {
+    .home{
+    height: 70vh;
+    }
+    .containerP >div{
+    max-width: 80%;
+    }
+    .containerParcerias button{
+    max-width: 283px;
+    margin: 0;    
+    margin-top: 2em;
+    margin-right: auto;
+    }
+
+
+
+}
+@media(min-width: 1200px){
+    .homeContainer h1{
+        font-size: 5em;
+    }
+    .homeContainer >div{
+        gap: 0.1em;
+    }
+    .homeContainer p{
+        font-size: 1.1em;
+    }
+    .home{
+    height: 90vh;
+    }
+    .itemSpan{
+        font-size: 0.7em;
+        font-weight: 700;
+    }
+    .containerParcerias div h2{
+        font-size:1.6em ;
+    }
+    .containerParcerias{
+        width: 80%;
+
+    }
+    .containerParcerias img{
+        width: 45%;
+    }
+    .containerParcerias div{
+        width: 55%;
+        padding: 5em 3em;
+    }
+.streatL{
+    margin-top: 14em;
+    padding:  0em;
+}
+.streatLW{
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+}
+.streatLContainer{
+    height: 100%;
+}
+.streatLContainer img{
+    width: 140px;
+    margin-top: -3em;
+}
+.streatLContainer{
+    width: 35%;
+}
+.streatLContainer div p{
+    color: rgba(0, 0, 0, 0.583);
+    text-transform: uppercase;
+    font-size: 0.7em;
+}
+.streatLContainer div h3{
+    font-size: 1.8em;
+}
+.streatLContainer div span{
+    color: var(--green);
+}
+.streatLContainerDiv{
+    flex-direction: row;
+    flex:1;
+}
+.streatLContainerDiv p{
+    max-width: 500px;
+    font-size: 0.9em;
+}
+
+
+
+
+
+
+
+
+
+
+  
+
+}
+@media(min-width:1400px){
+       .homeContainer h1{
+        font-size: 5em;
+    }
+    .homeContainer p{
+        font-size: 1.2em;
+        max-width: 650px;
+    }
+    .home{
+        background-attachment: fixed;
+    }
+    .containerParcerias{
+        width: 70%;
+    }    
+.streatL{
+    margin-top: 16em;
+}
+.streatLContainer{
+    width: 40%;
+}
+.streatLContainerDiv p{
+    max-width: 600px;
+}
+}

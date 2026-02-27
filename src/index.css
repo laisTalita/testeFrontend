@@ -1,9 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
 *{
   padding: 0;
   margin: 0;
 }
 :root{
-  --green: #1CAB00;
+  --green: #39DF18;
   --orange:#CE8300;
   --pastelOrange:#FFF6E6;
   --blue:#00A1C5;
@@ -13,12 +15,55 @@
   --black:#000000;
   --background: #F9F9F9;
   --yellow:#FFD902;
+  --font: 'Plus Jakarta Sans', sans-serif;
 }
 
-body, html{
+body, html,#root, .App{
   width: 100%;
-  height: 100%;
+  overflow-x: hidden;
 }
 body{
   background-color: var(--background);
+  font-size: 18px;
+  font-family: var(--font);
+}
+
+button{
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--green);
+    font-weight: 700;
+}
+p{
+  line-height: 1.4em;
+}
+
+@media (min-width: 768px) {
+  p{
+    font-size: 1em;
+  }
+  
+}
+
+.my-pagination {
+  text-align: center;
+  margin-top: 0.2em; 
+}
+
+.my-pagination .swiper-pagination-bullet {
+  background-color: rgba(0,0,0,0.3);
+  width: 8px;
+  height: 8px;
+  border-radius: 5px;
+  margin: 0 6px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.my-pagination .swiper-pagination-bullet-active {
+  background-color: var(--green);
+  width: 15px;
+  transform: scale(1.3);
 }
