@@ -75,7 +75,6 @@ export default function Familias(){
     icon: <FaRegLightbulb/>,
     texto:"Para ajudar nesta construção, contamos com os mediadores do MundoMaker que possuem conhecimento técnico para fazer com que as criações de cada um fiquem incríveis."
   },
-  ,
     {
     id:4,
     icon: <FaGift/>,

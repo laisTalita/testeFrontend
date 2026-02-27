@@ -44,14 +44,12 @@ export default function Escolas() {
     titulo:"Insumos",
     texto:"Não precisa se preocupar, todos os insumos necessários já estão inclusos."
   },
-  ,
     {
     id:4,
     icon: <MdPeople/>,
     titulo:"Para todas as idades",
     texto:"Projetos pensados desde a Educação Infantil até o novo Ensino Médio."
   }
-
   ]
   const atividades =[
     {

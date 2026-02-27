@@ -1,11 +1,8 @@
-import { useState } from "react";
 import styles from "../../styles/Video.module.css";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-
-import { FaPlayCircle } from "react-icons/fa";
 
 export default function Video({ texto, paragrafo, multiplos = false }) {
 
