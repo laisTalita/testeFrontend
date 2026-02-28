@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { MdArrowOutward } from "react-icons/md";
 import Marcas from "../ux/Marcas";
 import Video from "../ux/Video"
 import CardContainer from "../ux/CardContainer";
