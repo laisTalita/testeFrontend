@@ -1,0 +1,267 @@
+.familiaSection{
+    margin-top: 110px;
+}
+.familiaDiv{
+background-image:linear-gradient(to right, var(--orange),var(--yellow));
+padding: 7em 0em;
+position: relative;
+overflow: hidden;
+}
+.familiaDiv::after,.familiaDiv::before{
+   content: '';
+    position: absolute;
+     width: 70px;
+    height: 70px;
+    background-image: url('../assets/logos/circle.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.familiaDiv::after{
+    top: 0em;
+    left: 0em;
+}
+.familiaDiv::before{
+    bottom: 0em;
+    right: 0em;
+    transform: rotate(-180deg);
+}
+.familiaDiv div{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9em;
+}
+
+.tituloP, .programas p{
+    text-transform: uppercase;
+    color: white;
+    opacity: 0.8;
+}
+.mundoM{
+    max-width: 800px;
+}
+.programas{
+    display: flex;
+    flex-direction: column;
+    gap: 2.6em;
+    margin: 7em 0em;
+}
+.programas p{
+    color: rgba(0, 0, 0, 0.77);
+    font-size: 0.9em;
+}
+.programas div{
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+.prog1{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    gap: 0.9em;
+}
+.prog2{
+    display: flex;
+    overflow: auto;
+    gap: 1em;
+    background-color: rgba(128, 128, 128, 0.09);
+    padding: 1em;
+    box-shadow: inset 1px 3px 2px rgba(0, 0, 0, 0.01);
+    max-width: 870px;
+}
+.prog2 img{
+    min-width: 120px;
+    width: 30%;
+    max-width: 210px;
+    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.247);
+    transition: 0.1s ease-in;
+}
+.prog2 img:hover{
+    transform: scale(1.03);
+}
+.marker *{
+    position: relative;
+    z-index: 1;
+}
+.marker{
+    display: flex;
+    flex-direction: column;
+    gap: 7em;
+    margin-bottom: 8em;
+}
+.blocos{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 80%;
+    max-width: 500px;
+}
+.blocos div{
+    border-radius: 20px;
+
+}
+.blocos .labels{
+    font-size: 0.9em;
+    color: rgba(0, 0, 0, 0.707);
+}
+.blocoPrincipal{
+    padding: 2em 1.4em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+   
+}
+.blocoPrincipal span, .blocoInfos span{
+    font-size: 1.4em;
+}
+.orange div{
+    background-color: #FFF6E6;
+}
+.orange span{
+    color: var(--orange);
+}
+.blue div{
+    background-color: #E6FAFE;
+}
+.blue span{
+    color: var(--darkBlue);
+}
+.blocoInfos{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4em;
+}
+.containerInfos{
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+}
+
+.containerInfos p{
+    font-weight: 700;
+}
+.blocos .info{
+    margin-top: 0.4em;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    opacity: 1;
+}
+.infoList{
+    list-style-type: none;
+    display: flex;
+    overflow-x: auto;
+        flex-wrap: nowrap; 
+        gap: 2em;
+        padding: 1em;
+}
+.infoList li{
+       white-space: nowrap;
+       padding: 0.8em;
+       background-color:#eedec1 ;
+       border-radius: 5px;
+}
+.oficinas{
+    margin-top: 5em;
+}
+.divOfc{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 1.5em 1.2em;
+    gap: 0.8em;
+    background-color: var(--white);
+    flex: 1 1 260px; 
+    max-width: 290px;
+    height: 200px;
+   
+}
+.divOfc p{
+    text-transform: lowercase;
+    font-size: 1em;
+}
+.divOfc span{
+    color: #FFA300;
+    font-size: 1.5em;
+}
+.containerTruck{
+    background-image: url(../assets/images/ferramentas.png);
+    margin: 17em 0em;
+    margin-bottom: 30em;
+}
+.casal{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+}
+@media(min-width:992px){
+.casal{
+    flex-direction: row;
+    gap: 2em;
+}
+.containerTruck{
+    margin: 14em 0em;
+    margin-bottom: 20em;
+}
+}
+@media(min-width:1024px){
+    .familiaSection{
+    margin-top: 140px;
+}
+
+.familiaDiv::after,.familiaDiv::before{
+     width: 100px;
+    height: 100px;
+}
+}
+@media(min-width:1200px){
+.familiaDiv::after,.familiaDiv::before{
+     width: 140px;
+    height: 140px;
+}
+
+.familiaDiv{
+padding: 8em 0em;
+height: 15vh;
+max-height: 250px;
+display: flex;
+justify-content: center;
+}
+}
+@media (min-width:1400px) {
+    .familiaDiv div h1{
+        font-size: 2.4em;
+    }
+    .programas{
+        flex-direction: row;
+        gap: 0%;
+        justify-content: space-between;
+        width: 87%;
+        margin: auto;
+        margin-top: 10em;
+        margin-bottom: 10em;
+
+    }
+    .prog1{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+    }
+    .prog1 h2{
+        font-size: 2em;
+    }
+    .prog2{
+        background-color: transparent;
+        box-shadow: none;
+        flex: 1;
+    }
+    .reverse{
+        flex-direction: row-reverse;
+    }
+}

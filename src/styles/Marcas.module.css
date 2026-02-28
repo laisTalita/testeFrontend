@@ -1,0 +1,39 @@
+.marcasP {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    overflow-x: auto; 
+    margin-left: auto;
+    gap: 0.9em;
+    scroll-behavior: smooth;
+}
+.marcasP > div {
+    min-width: 80px;
+    height: 80px;
+    flex-shrink: 0; 
+}
+
+.marcasP img {
+    width: 60%;
+    height: 60%;
+        filter: grayscale(100%);
+    opacity: 0.9;
+    object-fit: contain; 
+}
+
+
+@media (min-width:1200px) {
+    .marcasP {
+    width: 90%;
+    overflow-x: visible; 
+       flex-wrap: wrap;   
+    scroll-behavior: none;
+    justify-content: space-evenly;
+    gap: 0.6em;
+}
+.marcasP > div {
+    width: 10%;
+    height: 10%;
+}
+
+}

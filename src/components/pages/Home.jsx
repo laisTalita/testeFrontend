@@ -1,6 +1,6 @@
 import Button from "../ux/Button";
 import styles from '../../styles/Home.module.css'
-import Data from "../../data/data.json"
+import data from "../../data/data.json"
 import kids from '../../assets/images/kids.png'
 import { MdOutlineArrowOutward } from "react-icons/md";
 import Lamp from '../../assets/images/Lamp.svg'
@@ -39,7 +39,7 @@ export default function Home(){
             <main className={styles.mainContainer}>
                 <section className={styles.abs}>
                     <div className={styles.containerP}>
-                        {Data.pagina1.map(item =>(
+                        {data.pagina1.map(item =>(
                             <div className={clsx(
                                 styles.containerParcerias,
                                 item.id ===1 && styles.cor1,
@@ -85,7 +85,7 @@ export default function Home(){
                     </div>
                 </section>
                 <Video texto={"Conheça mais do nosso trabalho"} paragrafo={"Vídeos"} multiplos={true}/>
-                <SectionGreen/>
+                <SectionGreen data={data.sectionGreen}/>
                 <Ebook/>
                 <Artigos/>
                 <Depoimentos/>

@@ -27,7 +27,7 @@
   backdrop-filter: blur(5px);}
 
 .backBlack{
-    background-color: rgba(0, 0, 0, 0.425);
+    background-color: rgba(0, 0, 0, 0.625);
     backdrop-filter: blur(5px);
 }
 .menuOverlay {
@@ -36,7 +36,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.545);
+  background-color: rgba(0, 0, 0, 0.682);
   z-index: 998; 
 }
 .logo{
@@ -72,18 +72,23 @@
 }
 .links li{
     list-style-type: none;
+    transition: 0.3s ease-in;
 }
 .link {
   text-decoration: none;
   padding-bottom: 4px;
   transition: color 0.3s, border-color 0.3s;
   border-bottom: 2px solid transparent;
+
+}
+.links li:hover{
+    transform: scale(1.07);
 }
 .linkW{
-    color: rgba(255, 255, 255, 0.529);
+    color: rgba(255, 255, 255, 0.765);
 }
 .linkB{
-    color: rgba(14, 14, 14, 0.643);
+    color: rgba(14, 14, 14, 0.777);
 }
 .active {
   border-bottom: 2px solid currentColor;

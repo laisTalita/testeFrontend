@@ -34,23 +34,25 @@ import e14 from "../../assets/logos/logosEmpresa/14.svg"
 import e15 from "../../assets/logos/logosEmpresa/15.svg"
 import e16 from "../../assets/logos/logosEmpresa/16.svg"
 
+import styles from '../../styles/Marcas.module.css'
 
 
 
 
-export default function Marcas({primeiraLista}){
+export default function Marcas({primeiraLista, className}){
     const lista1 = [m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12, m13, m14, m15, m16];
 
     const lista2 =[e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14,e15,e16
     ];
-
       const imagens = primeiraLista ? lista1 : lista2;
     return(
-        <section>
-            {imagens.map((img, index) => (
-                <img key={index} src={img} alt={`Marca ${index + 1}`} />
-            ))}
-            
+        <section  className={`${styles.marcasP} ${className}`}>
+                {imagens.map((img, index) => (
+                <div>
+                    <img key={index} src={img} alt={`Marca ${index + 1}`} />
+                 </div>
+
+                ))}
         </section>
     )
 }

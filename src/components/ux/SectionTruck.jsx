@@ -1,14 +1,9 @@
-import truck from  '../../assets/images/truck.svg'
-import ferramentas from '../../assets/images/ferramentas.png'
+import styles from  '../../styles/SectionTruck.module.css'
 
-export default function SectionTruck() {
+export default function SectionTruck({img = null, className, children, truck =false}) {
     return(
-       <section>
-        <img src={truck} alt="" />
-        <img src={ferramentas} alt="" />
-        <form action="">
-            
-        </form>
+       <section className={`${truck && styles.truck} ${styles.containerForm} ${className}`}>
+            <div className={styles.containerChildren}>{children}</div>
         </section> 
     )
     

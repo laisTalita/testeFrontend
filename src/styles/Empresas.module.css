@@ -1,0 +1,190 @@
+.empresas{
+    margin-top: 110px;
+}
+.containerEmpresas{
+    display: flex;
+    flex-direction: column;
+    height: clamp(500px, 90vh,800px);
+    margin-bottom: 6em;
+}
+
+.divImage,
+.divContainer{
+    flex: 1;
+}
+.divImage{
+    background-image: url('../assets/images/empresas/empresas.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.divContainer{
+    background-color: var(--skyBlue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.divContainer div{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9em;
+}
+
+.divContainer div span{
+    font-size: 0.9em;
+    text-transform: uppercase;
+    color: #000000e0;
+}
+
+.divContainer div p{
+    color: rgba(0, 0, 0, 0.694);
+    max-width: 700px;
+}
+
+.divContainer::after,
+.divContainer::before{
+    content: '';
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-image: url('../assets/logos/circle.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.divContainer::after{
+    top: -1em;
+    left:-1em;
+}
+
+.divContainer::before{
+    bottom: -1em;
+    right: -1em;
+    transform: rotate(-180deg);
+}
+.classeContainer{
+    margin: 5em 0em !important;
+}
+.classeContainer button{
+    background-color: var(--skyBlue);
+}
+.divVideo{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.043);
+}
+.imagContent{
+    width: 85%;
+    max-width: 600px;
+}
+.fakesImages img{
+    width: 100%;
+     object-fit: contain;
+}
+
+.fakesImages{
+    background-color: var(--white);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.345);
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 360px;
+}
+.containersTexto h4{
+    text-align: start;
+    margin-bottom: 0.6em;
+}
+.containersTexto{
+    padding: 1.5em;
+}
+.containersTexto p{
+    text-transform: lowercase;
+    font-size: 0.9em;
+}
+.containersTexto p::first-letter{
+    text-transform: uppercase;
+}
+@media (min-width: 992px){
+    .divContainer::after,
+    .divContainer::before{
+        width: 120px;
+        height: 120px;
+    }
+    .fakesImages{
+        min-height: 500px;
+        max-width: 400px;
+
+}
+    
+    .containerEmpresas{
+    flex-direction: row;
+    height: clamp(400px, 80vh,500px);
+}
+.divContainer{
+    padding-bottom: 6em;
+}
+    .divImage{
+        width: 40%;
+    }
+
+    .divContainer{
+        flex: 1;
+                justify-content: flex-end;
+
+    }
+}
+.galeriDiv{
+    background-color: rgba(54, 53, 53, 0.25);
+    height: 45vh;
+    max-height: 400px;
+    min-width: 300px;
+    max-width: 310px;
+}
+.marginDiv{
+    margin: 8em 0em;
+}
+.containerDivs p{
+    font-size: 0.7em;
+    text-transform: uppercase;
+    color: #000000be;
+}
+.contTruck{
+    background-image: url('../assets/images/ferramentas.png');
+    margin: 18em 0em;
+    margin-bottom: 30em;
+}
+.containerDivs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9;
+    text-align: center;
+    margin: 3em 0em;
+}
+.casal{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+}
+@media (min-width:992px){
+    .casal{
+    flex-direction: row;
+    gap: 2em;
+}
+}
+@media (min-width: 1024px){
+    .empresas{
+        margin-top: 140px;
+    }
+
+    .divContainer::after,
+    .divContainer::before{
+        width: 150px;
+        height: 150px;
+    }
+    .contTruck{
+    margin-bottom: 22em;
+}
+}

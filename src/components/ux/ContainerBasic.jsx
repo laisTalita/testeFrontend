@@ -10,6 +10,7 @@ export default function ContainerBasic({text,titulo,children,blue = false,classN
                 <p>{text}</p>
                 <h3>{titulo}</h3>
             </div>
+            
             <div className={style.scroll}>
                 {children}
             </div>

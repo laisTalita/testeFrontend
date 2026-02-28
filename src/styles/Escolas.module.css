@@ -1,0 +1,268 @@
+.escolas{
+    padding-top: 100px;
+
+}
+.forEscolas{
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1em;
+    padding: 10em 0em;
+    margin-bottom: 19em;
+    padding-bottom: 7em;
+    position: relative;
+}
+.forEscolas *{
+    position: relative;
+    z-index: 1;
+}
+.forSpan{
+    font-size: 0.7em;
+    text-transform: uppercase;
+    color: #00000095;
+}
+.forEscolas h1{
+    text-transform: lowercase;
+}
+.textEscolas{
+     font-size: 0.9em;
+     color: #00000095;
+     width: 90%;
+     max-width: 880px;
+}
+.forEscolas::after{
+    content: '';
+    position: absolute;
+    background-image: url('../assets/images/escadasEscolas.svg');
+    top: -5em;
+    right: -8em;
+    z-index: 0;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    opacity: 0.5;
+        background-repeat: no-repeat;
+
+}
+.forEscolas::before{
+    content: '';
+    position: absolute;
+    background-image: url('../assets/images/lineEscolas.svg');
+    width: 100%;
+    height: 100%;
+    top: -1em;
+    left: -15em;
+    background-position: top left;
+    background-size: contain;
+    opacity: 0.6;
+    transform: rotate(360deg);
+    background-repeat: no-repeat;
+}
+.containerForm{
+    background-image: url('../assets/images/escolas.png');    
+}
+.marcasEscolas{
+    margin-top: 27em;
+    margin-bottom: 5em;
+}
+
+.CardContainerOne{
+    background-color: var(--yellow);
+         position: relative;
+         overflow: hidden;
+
+}
+.contItem{
+     border: 1px  dashed black;
+     padding: 2em 1.8em;
+     width: 65%;
+     max-width: 300px;
+     height: 150px;
+     cursor: pointer;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     border-radius: 20px;
+     gap: 0.7em;
+     transition: 0.4s ease-in-out;
+     background-color: rgba(255, 255, 255, 0.076);
+     backdrop-filter: blur(8px);
+}
+.CardContainerOne::after{
+    content: '';
+    position: absolute;
+    bottom: -2em;
+    left: 0em;
+    width: 60px;
+    height: 80px;
+    background-image: url('../assets/images/linhasM.svg');
+    background-size: cover;
+    z-index: 0;
+        background-repeat: no-repeat;
+
+}
+.CardContainerOne::before{
+    content: '';
+    position: absolute;
+    top: -1em;
+    right: -1em;
+    width: 60px;
+    height: 80px;
+    background-image: url('../assets/images/linhasEs.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(-18deg);
+    z-index: 0;
+}
+.CardContainerOne *{
+    position: relative;
+    z-index: 1;
+}
+.contItem:hover{
+    transform: scale(1.02);
+}
+.contItem span{
+    font-size: 1.3em;
+}
+.contItem h4{
+    line-height: 1.5em;
+    font-weight: 600;
+}
+.contItem p{
+    font-weight: 700;
+    font-size: 0.9em !important;
+    color: rgba(0, 0, 0, 0.732);
+    text-transform: none !important;
+}
+.isSelecionado{
+    background-color: black;
+    color: white;
+}
+.isSelecionado p{
+    color: white !important;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+
+.containerAtividades{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 80% ;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.405);
+    max-width: 380px;
+    
+}
+.containerAtividades img{
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    object-fit: cover;
+    height: 210px;
+}
+.casal{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+}
+.containerAtividades div{
+    width: 90%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 0.9em;
+}
+
+.containerAtividades div h4{
+    margin-bottom: 0.7em;
+}
+.containerAtividades div p{
+    text-transform: lowercase;
+        font-size: 0.9em;
+
+
+}
+.containerAtividades div p::first-letter{
+    text-transform: uppercase;
+}
+
+@media (min-width:768px) {
+.forEscolas{
+    padding: 8em 0em;
+}
+    .forEscolas::before{
+    top: -2em;
+    left: -1em;
+    width: 18em;
+    background-size: cover;
+}
+.CardContainerOne::after{
+    bottom: 0.1em;
+    left: 0em;
+    background-image:contain;
+    background-position: center;
+    width: 40em;
+    height: 10em;
+
+}
+.CardContainerOne::before{
+    top: -1em;
+    right: -1em;
+    width: 12em;
+    height: 33em;
+    transform: rotate(-18deg);
+    z-index: 0;
+}
+}
+@media (min-width:992px) {
+.forEscolas{
+    padding-bottom: 0em;
+    margin-bottom: 7em;
+}
+    .forEscolas::before{
+    top: -1em;
+    left: -1em;
+}
+.forEscolas::after{
+    right: -3em;
+    width: 30%;
+    height: 100%;
+}
+.casal{
+    flex-direction: row;
+    gap: 2em;
+}
+.marcasEscolas{
+    margin-top: 13em;
+}
+
+}
+@media (min-width:1024px) {
+    .forEscolas::before{
+    top: -1em;
+    left: -1em;
+}
+}
+@media (min-width:1440px){
+
+.forEscolas::after{
+    right: -13em;
+    top: -0em;
+    width: 24em;
+    height: 100%;
+}
+.contItem{
+     width: 18%;
+     max-width: none;
+}
+}
+
+

@@ -1,16 +1,20 @@
-import data from "../../data/data.json"
 import styles from '../../styles/SectionGreen.module.css'
 
 function formatNumber(number) {
   return number.toLocaleString('pt-BR');
 }
-export default function SectionGreen() {
+export default function SectionGreen({data , isOrange = false, isBlue=false}) {
     return(
-        <section className={styles.sectionGreen}>
+        <section className={`${styles.sectionGreen} ${isOrange && styles.sectionOrange} ${isBlue && styles.secBlue}`}>
             <div className={styles.sectionGreenDiv}>
-                {data?.sectionGreen.map(item =>(
-                    <div key={item.id} className={styles.containerGreen}>
-                        <h3><span>+</span>{ item.id!==4 ? formatNumber(item.number):(item.number)}</h3>
+                {data?.map((item,index) =>(
+                    <div key={index} className={styles.containerGreen}>
+                        <h3 key={item.id}>
+                        <span>+</span>
+                        {index === data.length - 1 
+                        ? item.number 
+                        : formatNumber(item.number)}
+                    </h3>
                         <p>{item.text}</p>
                     </div>
                 ))}

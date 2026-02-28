@@ -36,6 +36,12 @@ button{
     justify-content: space-between;
     background-color: var(--green);
     font-weight: 700;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+button:hover{
+  transform: scale(1.07);
+  opacity: 0.8;
 }
 p{
   line-height: 1.4em;
